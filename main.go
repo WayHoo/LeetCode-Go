@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	res := problems.IsSubsequence("abc", "ahbgdc")
+	res := problems.MySqrt(12)
 	fmt.Println(res)
 	//testSort()
 }

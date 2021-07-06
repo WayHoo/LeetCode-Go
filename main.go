@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	res := problems.MySqrt(12)
+	res := problems.DiffWaysToCompute("1+2+3+4")
 	fmt.Println(res)
 	//testSort()
 }

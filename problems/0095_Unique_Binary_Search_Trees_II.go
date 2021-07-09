@@ -4,13 +4,6 @@ package problems
  LeetCode: https://leetcode-cn.com/problems/unique-binary-search-trees-ii/description/
 */
 
-// Definition for a binary tree node.
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
-
 func GenerateTrees(n int) []*TreeNode {
 	if n < 1 {
 		return nil

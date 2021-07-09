@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	res := problems.LetterCombinations("23")
+	res := problems.Permute([]int{1, 2, 3})
 	fmt.Println(res)
 	//testSort()
 }

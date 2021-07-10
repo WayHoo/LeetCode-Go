@@ -4,12 +4,6 @@ package problems
  LeetCode: https://leetcode-cn.com/problems/linked-list-cycle/description/
 */
 
-// Definition for singly-linked list.
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
-
 // 时间复杂度和空间复杂度均为 O(n)
 func HasCycle1(head *ListNode) bool {
 	nodeMap := make(map[*ListNode]bool)

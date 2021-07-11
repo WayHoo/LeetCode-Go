@@ -6,7 +6,7 @@ import (
 )
 
 /*
- LeetCode: https://leetcode-cn.com/problems/longest-word-in-dictionary-through-deleting/description/
+ LeetCode: https://leetcode-cn.com/problems/longest-word-in-dictionary-through-deleting/
 */
 
 func FindLongestWord(s string, dictionary []string) string {

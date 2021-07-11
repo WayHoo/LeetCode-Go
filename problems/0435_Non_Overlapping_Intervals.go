@@ -5,7 +5,7 @@ import (
 )
 
 /*
- LeetCode: https://leetcode-cn.com/problems/assign-cookies/description/
+ LeetCode: https://leetcode-cn.com/problems/assign-cookies/
 */
 
 func EraseOverlapIntervals(intervals [][]int) int {

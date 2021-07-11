@@ -1,7 +1,7 @@
 package problems
 
 /*
- LeetCode: https://leetcode-cn.com/problems/permutations/description/
+ LeetCode: https://leetcode-cn.com/problems/permutations/
 */
 
 func Permute(nums []int) [][]int {

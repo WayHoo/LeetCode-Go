@@ -5,7 +5,7 @@ import (
 )
 
 /*
- LeetCode: https://leetcode-cn.com/problems/different-ways-to-add-parentheses/description/
+ LeetCode: https://leetcode-cn.com/problems/different-ways-to-add-parentheses/
 */
 
 func DiffWaysToCompute(expression string) []int {

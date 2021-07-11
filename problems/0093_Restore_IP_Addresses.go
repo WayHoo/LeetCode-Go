@@ -3,7 +3,7 @@ package problems
 import "strconv"
 
 /*
- LeetCode: https://leetcode-cn.com/problems/restore-ip-addresses/description/
+ LeetCode: https://leetcode-cn.com/problems/restore-ip-addresses/
 */
 
 func RestoreIpAddresses(s string) []string {

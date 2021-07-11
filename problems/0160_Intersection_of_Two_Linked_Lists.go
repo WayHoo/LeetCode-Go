@@ -1,7 +1,7 @@
 package problems
 
 /*
- LeetCode: https://leetcode-cn.com/problems/permutations-ii/description/
+ LeetCode: https://leetcode-cn.com/problems/permutations-ii/
 */
 
 func GetIntersectionNode(headA, headB *ListNode) *ListNode {

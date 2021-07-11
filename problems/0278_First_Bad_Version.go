@@ -1,7 +1,7 @@
 package problems
 
 /*
- LeetCode: https://leetcode-cn.com/problems/first-bad-version/description/
+ LeetCode: https://leetcode-cn.com/problems/first-bad-version/
 */
 
 func FirstBadVersion(n int) int {

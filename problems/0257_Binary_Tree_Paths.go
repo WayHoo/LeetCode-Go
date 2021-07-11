@@ -3,7 +3,7 @@ package problems
 import "fmt"
 
 /*
- LeetCode: https://leetcode-cn.com/problems/binary-tree-paths/description/
+ LeetCode: https://leetcode-cn.com/problems/binary-tree-paths/
 */
 
 func BinaryTreePaths(root *TreeNode) []string {

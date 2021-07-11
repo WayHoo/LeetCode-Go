@@ -1,7 +1,7 @@
 package problems
 
 /*
- LeetCode: https://leetcode-cn.com/problems/is-subsequence/description/
+ LeetCode: https://leetcode-cn.com/problems/is-subsequence/
 */
 
 // IsSubsequence 双指针解法

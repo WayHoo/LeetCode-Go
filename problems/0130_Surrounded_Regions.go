@@ -1,7 +1,7 @@
 package problems
 
 /*
- LeetCode: https://leetcode-cn.com/problems/surrounded-regions/description/
+ LeetCode: https://leetcode-cn.com/problems/surrounded-regions/
 */
 
 func Solve(board [][]byte) {

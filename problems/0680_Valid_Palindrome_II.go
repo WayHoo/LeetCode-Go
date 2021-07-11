@@ -1,7 +1,7 @@
 package problems
 
 /*
- LeetCode: https://leetcode-cn.com/problems/valid-palindrome-ii/description/
+ LeetCode: https://leetcode-cn.com/problems/valid-palindrome-ii/
 */
 
 func ValidPalindrome(s string) bool {

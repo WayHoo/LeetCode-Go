@@ -3,7 +3,7 @@ package problems
 import "math"
 
 /*
- LeetCode: https://leetcode-cn.com/problems/sum-of-square-numbers/description/
+ LeetCode: https://leetcode-cn.com/problems/sum-of-square-numbers/
 */
 
 func JudgeSquareSum(c int) bool {

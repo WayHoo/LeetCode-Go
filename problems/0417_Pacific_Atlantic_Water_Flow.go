@@ -1,7 +1,7 @@
 package problems
 
 /*
- LeetCode: https://leetcode-cn.com/problems/pacific-atlantic-water-flow/description/
+ LeetCode: https://leetcode-cn.com/problems/pacific-atlantic-water-flow/
  解题思路：以左边界和上边界的元素为起点做“水往高处流”的 bfs，遍历到的元素标记为可流入太平洋；
 		 以右边界和下边界的元素为起点做同样的 bfs，遍历到的元素标记为可流入大西洋；
 		 遍历标记数组，有上述两种标记的坐标点即为解空间元素。

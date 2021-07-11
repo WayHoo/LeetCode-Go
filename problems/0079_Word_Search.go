@@ -1,7 +1,7 @@
 package problems
 
 /*
- LeetCode: https://leetcode-cn.com/problems/word-search/description/
+ LeetCode: https://leetcode-cn.com/problems/word-search/
 */
 
 func Exist(board [][]byte, word string) bool {

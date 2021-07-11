@@ -1,7 +1,7 @@
 package problems
 
 /*
- LeetCode: https://leetcode-cn.com/problems/merge-two-sorted-lists/description/
+ LeetCode: https://leetcode-cn.com/problems/merge-two-sorted-lists/
 */
 
 func MergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {

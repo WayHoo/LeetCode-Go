@@ -1,7 +1,7 @@
 package problems
 
 /*
- LeetCode: https://leetcode-cn.com/problems/maximum-subarray/description/
+ LeetCode: https://leetcode-cn.com/problems/maximum-subarray/
 */
 
 func MaxSubArray(nums []int) int {

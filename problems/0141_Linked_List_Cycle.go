@@ -1,7 +1,7 @@
 package problems
 
 /*
- LeetCode: https://leetcode-cn.com/problems/linked-list-cycle/description/
+ LeetCode: https://leetcode-cn.com/problems/linked-list-cycle/
 */
 
 // 时间复杂度和空间复杂度均为 O(n)

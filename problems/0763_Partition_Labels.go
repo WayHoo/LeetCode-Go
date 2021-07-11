@@ -1,7 +1,7 @@
 package problems
 
 /*
- LeetCode: https://leetcode-cn.com/problems/partition-labels/description/
+ LeetCode: https://leetcode-cn.com/problems/partition-labels/
 */
 
 func PartitionLabels(s string) []int {

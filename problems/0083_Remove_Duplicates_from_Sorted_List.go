@@ -1,7 +1,7 @@
 package problems
 
 /*
- LeetCode: https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/description/
+ LeetCode: https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/
 */
 
 func DeleteDuplicates(head *ListNode) *ListNode {

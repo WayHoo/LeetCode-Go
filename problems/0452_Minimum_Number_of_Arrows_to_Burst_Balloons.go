@@ -3,7 +3,7 @@ package problems
 import "sort"
 
 /*
- LeetCode: https://leetcode-cn.com/problems/minimum-number-of-arrows-to-burst-balloons/description/
+ LeetCode: https://leetcode-cn.com/problems/minimum-number-of-arrows-to-burst-balloons/
 */
 
 func FindMinArrowShots(points [][]int) int {

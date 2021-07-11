@@ -1,7 +1,7 @@
 package problems
 
 /*
- LeetCode: https://leetcode-cn.com/problems/single-element-in-a-sorted-array/description/
+ LeetCode: https://leetcode-cn.com/problems/single-element-in-a-sorted-array/
 */
 
 func SingleNonDuplicate(nums []int) int {

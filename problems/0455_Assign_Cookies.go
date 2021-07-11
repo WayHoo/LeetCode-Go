@@ -3,7 +3,7 @@ package problems
 import "sort"
 
 /*
- LeetCode: https://leetcode-cn.com/problems/assign-cookies/description/
+ LeetCode: https://leetcode-cn.com/problems/assign-cookies/
 */
 
 func FindContentChildren(g []int, s []int) int {

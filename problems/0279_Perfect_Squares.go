@@ -5,7 +5,7 @@ import (
 )
 
 /*
- LeetCode: https://leetcode-cn.com/problems/perfect-squares/description/
+ LeetCode: https://leetcode-cn.com/problems/perfect-squares/
 */
 
 func NumSquaresDP(n int) int {

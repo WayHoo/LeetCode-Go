@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	res := problems.Permute([]int{1, 2, 3})
+	res := problems.LongestConsecutive([]int{100,4,200,1,3,2})
 	fmt.Println(res)
 	//testSort()
 }

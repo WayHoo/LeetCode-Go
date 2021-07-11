@@ -4,7 +4,7 @@ package problems
  * LeetCode: https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/
  */
 
-func TwoSum(numbers []int, target int) []int {
+func TwoSum2(numbers []int, target int) []int {
 	if len(numbers) == 0 {
 		return nil
 	}

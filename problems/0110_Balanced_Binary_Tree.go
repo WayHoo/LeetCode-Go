@@ -1,8 +1,8 @@
 package problems
 
-/*
- LeetCode: https://leetcode-cn.com/problems/balanced-binary-tree/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/balanced-binary-tree/
+ */
 
 func IsBalanced(root *TreeNode) bool {
 	var checkBalance func(root *TreeNode) (bool, int)

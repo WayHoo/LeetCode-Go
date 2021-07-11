@@ -1,8 +1,8 @@
 package problems
 
-/*
- LeetCode: https://leetcode-cn.com/problems/is-subsequence/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/is-subsequence/
+ */
 
 // IsSubsequence 双指针解法
 func IsSubsequence(s string, t string) bool {

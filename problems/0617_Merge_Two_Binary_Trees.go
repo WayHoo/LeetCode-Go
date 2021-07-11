@@ -1,8 +1,8 @@
 package problems
 
-/*
- LeetCode: https://leetcode-cn.com/problems/merge-two-binary-trees/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/merge-two-binary-trees/
+ */
 
 func MergeTrees(root1 *TreeNode, root2 *TreeNode) *TreeNode {
 	if root1 == nil {

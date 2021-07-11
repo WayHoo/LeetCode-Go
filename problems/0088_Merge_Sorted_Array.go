@@ -1,8 +1,8 @@
 package problems
 
-/*
- LeetCode: https://leetcode-cn.com/problems/merge-sorted-array/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/merge-sorted-array/
+ */
 
 func Merge(nums1 []int, m int, nums2 []int, n int) {
 	if n == 0 {

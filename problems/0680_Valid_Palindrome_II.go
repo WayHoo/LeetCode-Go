@@ -1,8 +1,8 @@
 package problems
 
-/*
- LeetCode: https://leetcode-cn.com/problems/valid-palindrome-ii/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/valid-palindrome-ii/
+ */
 
 func ValidPalindrome(s string) bool {
 	if s == "" {

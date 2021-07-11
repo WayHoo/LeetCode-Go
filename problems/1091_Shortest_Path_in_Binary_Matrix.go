@@ -1,8 +1,8 @@
 package problems
 
-/*
- LeetCode: https://leetcode-cn.com/problems/shortest-path-in-binary-matrix/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/shortest-path-in-binary-matrix/
+ */
 
 type Node struct {
 	i, j int

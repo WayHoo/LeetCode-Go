@@ -1,7 +1,7 @@
 package problems
 
-/*
- LeetCode: https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/
  */
 
 func TwoSum(numbers []int, target int) []int {

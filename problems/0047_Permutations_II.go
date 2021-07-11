@@ -2,9 +2,9 @@ package problems
 
 import "sort"
 
-/*
- LeetCode: https://leetcode-cn.com/problems/permutations-ii/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/permutations-ii/
+ */
 
 func PermuteUnique(nums []int) [][]int {
 	if len(nums) == 1 {

@@ -1,8 +1,8 @@
 package problems
 
-/*
- LeetCode: https://leetcode-cn.com/problems/diameter-of-binary-tree/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/diameter-of-binary-tree/
+ */
 
 func DiameterOfBinaryTree(root *TreeNode) int {
 	maxDiameter := 0

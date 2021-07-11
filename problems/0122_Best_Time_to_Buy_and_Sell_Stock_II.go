@@ -1,8 +1,8 @@
 package problems
 
-/*
- LeetCode: https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/
+ */
 
 func MaxProfit2(prices []int) int {
 	profit := 0

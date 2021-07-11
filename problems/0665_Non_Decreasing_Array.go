@@ -1,8 +1,8 @@
 package problems
 
-/*
- LeetCode: https://leetcode-cn.com/problems/is-subsequence/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/is-subsequence/
+ */
 
 func CheckPossibility(nums []int) bool {
 	changed := false

@@ -1,8 +1,8 @@
 package problems
 
-/*
- LeetCode: https://leetcode-cn.com/problems/word-search/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/word-search/
+ */
 
 func Exist(board [][]byte, word string) bool {
 	m, n := len(board), len(board[0])

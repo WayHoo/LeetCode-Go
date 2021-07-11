@@ -1,8 +1,8 @@
 package problems
 
-/*
- LeetCode: https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+ */
 
 func SearchRange(nums []int, target int) []int {
 	N := len(nums)

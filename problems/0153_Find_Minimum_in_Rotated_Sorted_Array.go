@@ -1,8 +1,8 @@
 package problems
 
-/*
- LeetCode: https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/
+ */
 
 func FindMin(nums []int) int {
 	l, r := 0, len(nums)-1

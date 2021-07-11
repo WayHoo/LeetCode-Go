@@ -2,9 +2,9 @@ package problems
 
 import "math"
 
-/*
- LeetCode: https://leetcode-cn.com/problems/sum-of-square-numbers/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/sum-of-square-numbers/
+ */
 
 func JudgeSquareSum(c int) bool {
 	if c < 0 {

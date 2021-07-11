@@ -1,8 +1,8 @@
 package problems
 
-/*
- LeetCode: https://leetcode-cn.com/problems/first-bad-version/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/first-bad-version/
+ */
 
 func FirstBadVersion(n int) int {
 	l, r := 0, n

@@ -2,9 +2,9 @@ package problems
 
 import "strconv"
 
-/*
- LeetCode: https://leetcode-cn.com/problems/restore-ip-addresses/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/restore-ip-addresses/
+ */
 
 func RestoreIpAddresses(s string) []string {
 	if len(s) < 4 || len(s) > 12 {

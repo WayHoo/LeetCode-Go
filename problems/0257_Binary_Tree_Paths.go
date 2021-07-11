@@ -2,9 +2,9 @@ package problems
 
 import "fmt"
 
-/*
- LeetCode: https://leetcode-cn.com/problems/binary-tree-paths/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/binary-tree-paths/
+ */
 
 func BinaryTreePaths(root *TreeNode) []string {
 	if root == nil {

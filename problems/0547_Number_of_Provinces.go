@@ -1,8 +1,8 @@
 package problems
 
-/*
- LeetCode: https://leetcode-cn.com/problems/number-of-provinces/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/number-of-provinces/
+ */
 
 func FindCircleNum(isConnected [][]int) int {
 	n := len(isConnected)

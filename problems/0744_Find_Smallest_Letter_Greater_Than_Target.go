@@ -1,8 +1,8 @@
 package problems
 
-/*
- LeetCode: https://leetcode-cn.com/problems/sqrtx/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/sqrtx/
+ */
 
 func NextGreatestLetter(letters []byte, target byte) byte {
 	l, r := 0, len(letters) - 1

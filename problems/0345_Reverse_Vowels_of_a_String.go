@@ -1,8 +1,8 @@
 package problems
 
-/*
- LeetCode: https://leetcode-cn.com/problems/reverse-vowels-of-a-string/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/reverse-vowels-of-a-string/
+ */
 
 func ReverseVowels(s string) string {
 	if len(s) == 0 {

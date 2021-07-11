@@ -4,9 +4,9 @@ import (
 	"bytes"
 )
 
-/*
- LeetCode: https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/
+ */
 
 func LetterCombinations(digits string) []string {
 	res := make([]string, 0)

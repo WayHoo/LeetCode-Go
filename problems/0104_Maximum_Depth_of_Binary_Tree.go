@@ -1,8 +1,8 @@
 package problems
 
-/*
- LeetCode: https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/
+ */
 
 // MaxDepth 递归方法
 func MaxDepth(root *TreeNode) int {

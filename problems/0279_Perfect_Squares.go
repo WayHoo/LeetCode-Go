@@ -4,9 +4,9 @@ import (
 	"math"
 )
 
-/*
- LeetCode: https://leetcode-cn.com/problems/perfect-squares/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/perfect-squares/
+ */
 
 func NumSquaresDP(n int) int {
 	if n <= 0 {

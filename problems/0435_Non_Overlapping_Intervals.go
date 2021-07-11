@@ -4,9 +4,9 @@ import (
 	"sort"
 )
 
-/*
- LeetCode: https://leetcode-cn.com/problems/assign-cookies/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/assign-cookies/
+ */
 
 func EraseOverlapIntervals(intervals [][]int) int {
 	N := len(intervals)

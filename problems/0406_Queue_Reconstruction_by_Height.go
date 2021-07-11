@@ -2,9 +2,9 @@ package problems
 
 import "sort"
 
-/*
- LeetCode: https://leetcode-cn.com/problems/queue-reconstruction-by-height/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/queue-reconstruction-by-height/
+ */
 
 func ReconstructQueue(people [][]int) [][]int {
 	N := len(people)

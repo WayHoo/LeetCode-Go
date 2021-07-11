@@ -1,8 +1,8 @@
 package problems
 
-/*
- LeetCode: https://leetcode-cn.com/problems/permutations/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/permutations/
+ */
 
 func Permute(nums []int) [][]int {
 	if len(nums) == 1 {

@@ -5,9 +5,9 @@ import (
 	"strings"
 )
 
-/*
- LeetCode: https://leetcode-cn.com/problems/longest-word-in-dictionary-through-deleting/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/longest-word-in-dictionary-through-deleting/
+ */
 
 func FindLongestWord(s string, dictionary []string) string {
 	sort.Slice(dictionary, func(i, j int) bool {

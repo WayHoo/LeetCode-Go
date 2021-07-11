@@ -1,8 +1,8 @@
 package problems
 
-/*
- LeetCode: https://leetcode-cn.com/problems/unique-binary-search-trees-ii/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/unique-binary-search-trees-ii/
+ */
 
 func GenerateTrees(n int) []*TreeNode {
 	if n < 1 {

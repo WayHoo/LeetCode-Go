@@ -1,8 +1,8 @@
 package problems
 
-/*
- LeetCode: https://leetcode-cn.com/problems/permutations-ii/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/permutations-ii/
+ */
 
 func GetIntersectionNode(headA, headB *ListNode) *ListNode {
 	if headA == nil || headB == nil {

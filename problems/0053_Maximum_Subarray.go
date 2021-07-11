@@ -1,8 +1,8 @@
 package problems
 
-/*
- LeetCode: https://leetcode-cn.com/problems/maximum-subarray/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/maximum-subarray/
+ */
 
 func MaxSubArray(nums []int) int {
 	if len(nums) == 0 {

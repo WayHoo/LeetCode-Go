@@ -1,8 +1,8 @@
 package problems
 
-/*
- LeetCode: https://leetcode-cn.com/problems/word-ladder/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/word-ladder/
+ */
 
 func LadderLength(beginWord string, endWord string, wordList []string) int {
 	queue := []int{-1}

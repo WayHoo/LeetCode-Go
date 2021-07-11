@@ -1,8 +1,8 @@
 package problems
 
-/*
- LeetCode: https://leetcode-cn.com/problems/partition-labels/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/partition-labels/
+ */
 
 func PartitionLabels(s string) []int {
 	charIndex := make([]int, 26)

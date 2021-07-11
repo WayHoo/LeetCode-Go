@@ -1,8 +1,8 @@
 package problems
 
-/*
- LeetCode: https://leetcode-cn.com/problems/sqrtx/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/sqrtx/
+ */
 
 func MySqrt(x int) int {
 	if x <= 0 {

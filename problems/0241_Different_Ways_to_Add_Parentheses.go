@@ -4,9 +4,9 @@ import (
 	"strconv"
 )
 
-/*
- LeetCode: https://leetcode-cn.com/problems/different-ways-to-add-parentheses/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/different-ways-to-add-parentheses/
+ */
 
 func DiffWaysToCompute(expression string) []int {
 	res := make([]int, 0)

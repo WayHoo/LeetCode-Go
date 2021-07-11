@@ -1,8 +1,8 @@
 package problems
 
-/*
- LeetCode: https://leetcode-cn.com/problems/reverse-linked-list/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/reverse-linked-list/
+ */
 
 func ReverseList(head *ListNode) *ListNode {
 	var node *ListNode

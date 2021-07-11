@@ -1,8 +1,8 @@
 package problems
 
-/*
- LeetCode: https://leetcode-cn.com/problems/number-of-islands/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/number-of-islands/
+ */
 
 func NumIslands(grid [][]byte) int {
 	m := len(grid)

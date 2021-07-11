@@ -1,8 +1,8 @@
 package problems
 
-/*
- LeetCode: https://leetcode-cn.com/problems/surrounded-regions/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/surrounded-regions/
+ */
 
 func Solve(board [][]byte) {
 	m := len(board)

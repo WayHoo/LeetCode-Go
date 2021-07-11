@@ -1,8 +1,8 @@
 package problems
 
-/*
- LeetCode: https://leetcode-cn.com/problems/max-area-of-island/
-*/
+/**
+ * LeetCode: https://leetcode-cn.com/problems/max-area-of-island/
+ */
 
 func MaxAreaOfIslandBFS(grid [][]int) int {
 	m := len(grid)

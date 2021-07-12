@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	res := problems.LongestConsecutive([]int{100,4,200,1,3,2})
+	res := problems.CountSubstrings("bbccaacacdbdbcbcbbbcbadcbdddbabaddbcadb")
 	fmt.Println(res)
 	//testSort()
 }

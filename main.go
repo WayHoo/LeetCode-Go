@@ -8,9 +8,10 @@ import (
 )
 
 func main() {
-	res := problems.CountSubstrings("bbccaacacdbdbcbcbbbcbadcbdddbabaddbcadb")
-	fmt.Println(res)
+	//res := problems.CountSubstrings("bbccaacacdbdbcbcbbbcbadcbdddbabaddbcadb")
+	//fmt.Println(res)
 	//testSort()
+	testLRUCache()
 }
 
 func testSort() {
@@ -31,4 +32,27 @@ func testSort() {
 	T5 = append(T5, T...)
 	mySort.Down2UpMergeSort(T5)
 	fmt.Println("Down2UpMergeSort sort:", T5)
+}
+
+func testLRUCache() {
+	lru := problems.Constructor(2)
+	lru.Watch()
+	lru.Put(1, 1)
+	lru.Watch()
+	lru.Put(2, 2)
+	lru.Watch()
+	fmt.Println(lru.Get(1))
+	lru.Watch()
+	lru.Put(3, 3)
+	lru.Watch()
+	fmt.Println(lru.Get(2))
+	lru.Watch()
+	lru.Put(4, 4)
+	lru.Watch()
+	fmt.Println(lru.Get(1))
+	lru.Watch()
+	fmt.Println(lru.Get(3))
+	lru.Watch()
+	fmt.Println(lru.Get(4))
+	lru.Watch()
 }

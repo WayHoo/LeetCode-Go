@@ -1,18 +1,18 @@
 package main
 
 import (
-	"fmt"
-
 	"LeetCode-Go/algorithm"
 	"LeetCode-Go/problems"
+	"fmt"
 )
 
 func main() {
-	//res := problems.CountSubstrings("bbccaacacdbdbcbcbbbcbadcbdddbabaddbcadb")
-	//fmt.Println(res)
+	res := problems.IntegerBreak(58)
+	fmt.Println(res)
+
 	//testSort()
 	//testLRUCache()
-	testUnionFindSet()
+	//testUnionFindSet()
 }
 
 func testSort() {

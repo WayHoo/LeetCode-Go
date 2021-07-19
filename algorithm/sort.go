@@ -11,12 +11,8 @@ import (
 
 // Bubble 冒泡排序
 func Bubble(T []int) {
-	if len(T) <= 1 {
-		return
-	}
-	N := len(T)
 	isSorted := false
-	for i := N - 1; i > 0 && !isSorted; i-- {
+	for i := len(T) - 1; i > 0 && !isSorted; i-- {
 		isSorted = true
 		for j := 0; j < i; j++ {
 			if T[j] > T[j+1] {
@@ -29,11 +25,7 @@ func Bubble(T []int) {
 
 // Insertion 插入排序
 func Insertion(T []int) {
-	if len(T) <= 1 {
-		return
-	}
-	N := len(T)
-	for i := 1; i < N; i++ {
+	for i := 1; i < len(T); i++ {
 		for j := i; j > 0 && T[j] < T[j-1]; j-- {
 			T[j-1], T[j] = T[j], T[j-1]
 		}
@@ -43,11 +35,7 @@ func Insertion(T []int) {
 // Shell 希尔排序
 // 希尔排序增量序列简介：https://blog.csdn.net/Foliciatarier/article/details/53891144
 func Shell(T []int) {
-	if len(T) <= 1 {
-		return
-	}
-	N := len(T)
-	h := 1
+	N, h := len(T), 1
 	// Knuth 增量序列
 	for h < N/3 {
 		h = 3*h + 1
@@ -90,27 +78,21 @@ func merge(T []int, l, m, r int) {
 
 // Up2DownMergeSort 自顶向下归并排序
 func Up2DownMergeSort(T []int) {
-	if len(T) <= 1 {
-		return
+	var subSort func(l, r int)
+	subSort = func(l, r int) {
+		if l >= r {
+			return
+		}
+		m := (l + r) / 2
+		subSort(l, m)
+		subSort(m+1, r)
+		merge(T, l, m, r)
 	}
-	up2DownSubSort(T, 0, len(T)-1)
-}
-
-func up2DownSubSort(T []int, l, r int) {
-	if l == r {
-		return
-	}
-	m := (l + r) / 2
-	up2DownSubSort(T, l, m)
-	up2DownSubSort(T, m+1, r)
-	merge(T, l, m, r)
+	subSort(0, len(T)-1)
 }
 
 // Down2UpMergeSort 自底向上归并排序
 func Down2UpMergeSort(T []int) {
-	if len(T) <= 1 {
-		return
-	}
 	N := len(T)
 	for sz := 1; sz < N; sz <<= 1 {
 		for i := 0; i+sz < N; i += sz + sz {
@@ -121,6 +103,78 @@ func Down2UpMergeSort(T []int) {
 			merge(T, i, i+sz-1, l)
 		}
 	}
+}
+
+// QuickSort 快速排序
+func QuickSort(T []int) {
+	// 选主元
+	medium3 := func(l, r int) int {
+		m := l + (r-l)/2
+		if T[l] > T[m] {
+			T[l], T[m] = T[m], T[l]
+		}
+		if T[l] > T[r] {
+			T[l], T[r] = T[r], T[l]
+		}
+		if T[m] > T[r] {
+			T[m], T[r] = T[r], T[m]
+		}
+        // 主元藏到 r-1 的位置
+		T[m], T[r-1] = T[r-1], T[m]
+		return T[r-1]
+	}
+	var quickSort func(l, r int)
+	quickSort = func(l, r int) {
+		if l >= r {
+			return
+		}
+		pivot := medium3(l, r)
+		i, j := l, r-1
+		for i < j {
+			for i++; T[i] < pivot; i++ {
+			}
+			for j--; T[j] > pivot; j-- {
+			}
+			if i < j {
+				T[i], T[j] = T[j], T[i]
+			}
+		}
+		T[i], T[r-1] = T[r-1], T[i]
+		quickSort(l, i-1)
+		quickSort(i+1, r)
+	}
+	quickSort(0, len(T)-1)
+}
+
+// HeapSort 堆排序
+func HeapSort(T []int) {
+    L := make([]int, 1)
+    L = append(L, T...)
+    sink := func(k, N int) {
+        for 2*k <= N {
+            j := 2*k
+            if j < N && L[j] < L[j+1] {
+                j++
+            }
+            if L[k] >= L[j] {
+                break
+            }
+            L[k], L[j] = L[j], L[k]
+            k = j
+        }
+    }
+    N := len(T)
+    for k := N/2; k >= 1; k-- {
+        sink(k, N)
+    }
+    for N > 1 {
+        L[1], L[N] = L[N], L[1]
+        N--
+        sink(1, N)
+    }
+    for i := 0; i < len(T); i++ {
+        T[i] = L[i+1]
+    }
 }
 
 // less judge if a < b

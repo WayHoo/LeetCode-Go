@@ -1,23 +1,27 @@
 package main
 
 import (
+	"bufio"
+	"fmt"
+	"os"
+
 	"LeetCode-Go/algorithm"
 	"LeetCode-Go/problems"
-	"fmt"
 )
 
 func main() {
-	res := problems.IntegerBreak(58)
-	fmt.Println(res)
+	//res := problems.IntegerBreak(58)
+	//fmt.Println(res)
 
-	//testSort()
+	testSort()
 	//testLRUCache()
 	//testUnionFindSet()
+	//subMain()
 }
 
 func testSort() {
 	T := []int{5, 1, 2, 9, 7, 4, 8, 3, 10, 6}
-	var T1, T2, T3, T4, T5 []int
+	var T1, T2, T3, T4, T5, T6, T7 []int
 	T1 = append(T1, T...)
 	algorithm.Bubble(T1)
 	fmt.Println("Bubble sort:", T1)
@@ -33,6 +37,12 @@ func testSort() {
 	T5 = append(T5, T...)
 	algorithm.Down2UpMergeSort(T5)
 	fmt.Println("Down2UpMergeSort sort:", T5)
+    T6 = append(T6, T...)
+    algorithm.QuickSort(T6)
+    fmt.Println("QuickSort sort:", T6)
+    T7 = append(T7, T...)
+    algorithm.HeapSort(T7)
+    fmt.Println("HeapSort sort:", T7)
 }
 
 func testLRUCache() {
@@ -68,4 +78,16 @@ func testUnionFindSet() {
 	uf.Union(4, 6)
 	_ = uf.Find(1)
 	_ = uf.Find(7)
+}
+
+func subMain() {
+	name, age, salary := "", 0, 0.0
+	scanner := bufio.NewScanner(os.Stdin)
+	for scanner.Scan() {
+		_, err := fmt.Sscanf(scanner.Text(), "%s%d%f", &name, &age, &salary)
+		if err != nil {
+			break
+		}
+		fmt.Println(name, age, salary)
+	}
 }

@@ -9,8 +9,8 @@ import (
 	"reflect"
 )
 
-// Bubble 冒泡排序
-func Bubble(T []int) {
+// BubbleSort 冒泡排序
+func BubbleSort(T []int) {
 	isSorted := false
 	for i := len(T) - 1; i > 0 && !isSorted; i-- {
 		isSorted = true
@@ -23,8 +23,8 @@ func Bubble(T []int) {
 	}
 }
 
-// Insertion 插入排序
-func Insertion(T []int) {
+// InsertionSort 插入排序
+func InsertionSort(T []int) {
 	for i := 1; i < len(T); i++ {
 		for j := i; j > 0 && T[j] < T[j-1]; j-- {
 			T[j-1], T[j] = T[j], T[j-1]
@@ -32,9 +32,9 @@ func Insertion(T []int) {
 	}
 }
 
-// Shell 希尔排序
+// ShellSort 希尔排序
 // 希尔排序增量序列简介：https://blog.csdn.net/Foliciatarier/article/details/53891144
-func Shell(T []int) {
+func ShellSort(T []int) {
 	N, h := len(T), 1
 	// Knuth 增量序列
 	for h < N/3 {
@@ -119,7 +119,7 @@ func QuickSort(T []int) {
 		if T[m] > T[r] {
 			T[m], T[r] = T[r], T[m]
 		}
-        // 主元藏到 r-1 的位置
+		// 主元藏到 r-1 的位置
 		T[m], T[r-1] = T[r-1], T[m]
 		return T[r-1]
 	}
@@ -146,35 +146,79 @@ func QuickSort(T []int) {
 	quickSort(0, len(T)-1)
 }
 
+// ThreeWayQuickSort 三向切分快速排序
+func ThreeWayQuickSort(T []int) {
+	medium3 := func(l, r int) {
+		if r-l <= 1 {
+			return
+		}
+		m := l + (r-l)/2
+		// T[m] <= T[l] <= T[r]
+		if T[l] < T[m] {
+			T[l], T[m] = T[m], T[l]
+		}
+		if T[r] < T[m] {
+			T[r], T[m] = T[m], T[r]
+		}
+		if T[l] > T[r] {
+			T[l], T[r] = T[r], T[l]
+		}
+	}
+	var qSort func(l, r int)
+	qSort = func(l, r int) {
+		if l >= r {
+			return
+		}
+		medium3(l, r)
+		lt, i, gt := l, l+1, r
+		pivot := T[l]
+		for i <= gt {
+			if T[i] < pivot {
+				T[i], T[lt] = T[lt], T[i]
+				i++
+				lt++
+			} else if T[i] > pivot {
+				T[i], T[gt] = T[gt], T[i]
+				gt--
+			} else {
+				i++
+			}
+		}
+		qSort(l, lt-1)
+		qSort(gt+1, r)
+	}
+	qSort(0, len(T)-1)
+}
+
 // HeapSort 堆排序
 func HeapSort(T []int) {
-    L := make([]int, 1)
-    L = append(L, T...)
-    sink := func(k, N int) {
-        for 2*k <= N {
-            j := 2*k
-            if j < N && L[j] < L[j+1] {
-                j++
-            }
-            if L[k] >= L[j] {
-                break
-            }
-            L[k], L[j] = L[j], L[k]
-            k = j
-        }
-    }
-    N := len(T)
-    for k := N/2; k >= 1; k-- {
-        sink(k, N)
-    }
-    for N > 1 {
-        L[1], L[N] = L[N], L[1]
-        N--
-        sink(1, N)
-    }
-    for i := 0; i < len(T); i++ {
-        T[i] = L[i+1]
-    }
+	L := make([]int, 1)
+	L = append(L, T...)
+	sink := func(k, N int) {
+		for 2*k <= N {
+			j := 2 * k
+			if j < N && L[j] < L[j+1] {
+				j++
+			}
+			if L[k] >= L[j] {
+				break
+			}
+			L[k], L[j] = L[j], L[k]
+			k = j
+		}
+	}
+	N := len(T)
+	for k := N / 2; k >= 1; k-- {
+		sink(k, N)
+	}
+	for N > 1 {
+		L[1], L[N] = L[N], L[1]
+		N--
+		sink(1, N)
+	}
+	for i := 0; i < len(T); i++ {
+		T[i] = L[i+1]
+	}
 }
 
 // less judge if a < b

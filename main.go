@@ -20,29 +20,32 @@ func main() {
 }
 
 func testSort() {
-	T := []int{5, 1, 2, 9, 7, 4, 8, 3, 10, 6}
-	var T1, T2, T3, T4, T5, T6, T7 []int
+	T := []int{5, 1, 2, 9, 7, 4, 8, 3, 10, 6, 6, 2, 4, 1, 5, 3, 9, 8, 7, 10}
+	var T1, T2, T3, T4, T5, T6, T7, T8 []int
 	T1 = append(T1, T...)
-	algorithm.Bubble(T1)
-	fmt.Println("Bubble sort:", T1)
+	algorithm.BubbleSort(T1)
+	fmt.Println("BubbleSort:", T1)
 	T2 = append(T2, T...)
-	algorithm.Insertion(T2)
-	fmt.Println("Insertion sort:", T2)
+	algorithm.InsertionSort(T2)
+	fmt.Println("InsertionSort:", T2)
 	T3 = append(T3, T...)
-	algorithm.Shell(T3)
-	fmt.Println("Shell sort:", T3)
+	algorithm.ShellSort(T3)
+	fmt.Println("ShellSort:", T3)
 	T4 = append(T4, T...)
 	algorithm.Up2DownMergeSort(T4)
-	fmt.Println("Up2DownMergeSort sort:", T4)
+	fmt.Println("Up2DownMergeSort:", T4)
 	T5 = append(T5, T...)
 	algorithm.Down2UpMergeSort(T5)
-	fmt.Println("Down2UpMergeSort sort:", T5)
+	fmt.Println("Down2UpMergeSort:", T5)
     T6 = append(T6, T...)
     algorithm.QuickSort(T6)
-    fmt.Println("QuickSort sort:", T6)
+    fmt.Println("QuickSort:", T6)
     T7 = append(T7, T...)
-    algorithm.HeapSort(T7)
-    fmt.Println("HeapSort sort:", T7)
+    algorithm.ThreeWayQuickSort(T7)
+    fmt.Println("ThreeWayQuickSort:", T7)
+    T8 = append(T8, T...)
+    algorithm.HeapSort(T8)
+    fmt.Println("HeapSort:", T8)
 }
 
 func testLRUCache() {

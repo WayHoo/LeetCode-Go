@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	res := problems.ConvertToTitle(2147483647)
+	res := problems.CombinationSum([]int{1}, 1)
 	fmt.Println(res)
 
 	//testSort()
@@ -37,15 +37,15 @@ func testSort() {
 	T5 = append(T5, T...)
 	algorithm.Down2UpMergeSort(T5)
 	fmt.Println("Down2UpMergeSort:", T5)
-    T6 = append(T6, T...)
-    algorithm.QuickSort(T6)
-    fmt.Println("QuickSort:", T6)
-    T7 = append(T7, T...)
-    algorithm.ThreeWayQuickSort(T7)
-    fmt.Println("ThreeWayQuickSort:", T7)
-    T8 = append(T8, T...)
-    algorithm.HeapSort(T8)
-    fmt.Println("HeapSort:", T8)
+	T6 = append(T6, T...)
+	algorithm.QuickSort(T6)
+	fmt.Println("QuickSort:", T6)
+	T7 = append(T7, T...)
+	algorithm.ThreeWayQuickSort(T7)
+	fmt.Println("ThreeWayQuickSort:", T7)
+	T8 = append(T8, T...)
+	algorithm.HeapSort(T8)
+	fmt.Println("HeapSort:", T8)
 }
 
 func testLRUCache() {

@@ -1,22 +1,24 @@
 package main
 
 import (
-	"bufio"
+    "bufio"
 	"fmt"
 	"os"
 
 	"LeetCode-Go/algorithm"
+	"LeetCode-Go/concurrency"
 	"LeetCode-Go/problems"
 )
 
 func main() {
-	res := problems.CombinationSum([]int{1}, 1)
+	res := problems.LengthOfLISV2([]int{4, 10, 4, 3, 8, 9})
 	fmt.Println(res)
 
 	//testSort()
 	//testLRUCache()
 	//testUnionFindSet()
 	//subMain()
+	//testConcurrency()
 }
 
 func testSort() {
@@ -93,4 +95,8 @@ func subMain() {
 		}
 		fmt.Println(name, age, salary)
 	}
+}
+
+func testConcurrency() {
+	concurrency.Quiz02()
 }

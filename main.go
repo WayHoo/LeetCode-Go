@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-    res := problems.LengthOfLISV2([]int{4, 10, 4, 3, 8, 9})
+    res := problems.SubsetsBits([]int{1, 2, 3})
     fmt.Println(res)
 
     //testSort()

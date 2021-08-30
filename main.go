@@ -1,24 +1,24 @@
 package main
 
 import (
-    "bufio"
-    "fmt"
-    "os"
+	"bufio"
+	"fmt"
+	"os"
 
-    "LeetCode-Go/algorithm"
-    "LeetCode-Go/concurrency"
-    "LeetCode-Go/problems"
+	"LeetCode-Go/algorithm"
+	"LeetCode-Go/concurrency"
+	"LeetCode-Go/problems"
 )
 
 func main() {
-    res := problems.SubsetsBits([]int{1, 2, 3})
-    fmt.Println(res)
+	res := problems.MaximalSquare([][]byte{{'1','0','1','0','0'},{'1','0','1','1','1'},{'1','1','1','1','1'},{'1','0','0','1','0'}})
+	fmt.Println(res)
 
-    //testSort()
-    //testLRUCache()
-    //testUnionFindSet()
-    //subMain()
-    //testConcurrency()
+	//testSort()
+	//testLRUCache()
+	//testUnionFindSet()
+	//subMain()
+	//testConcurrency()
 }
 
 func testSort() {

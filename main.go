@@ -19,6 +19,7 @@ func main() {
 	//testUnionFindSet()
 	//subMain()
 	//testConcurrency()
+	//algorithm.TestHeap()
 }
 
 func testSort() {
